@@ -1,7 +1,5 @@
 # Echidna: A Fast Smart Contract Fuzzer <a href="https://raw.githubusercontent.com/crytic/echidna/master/echidna.png"><img src="https://raw.githubusercontent.com/crytic/echidna/master/echidna.png" width="75"/></a>
 
-![Build Status](https://github.com/crytic/echidna/workflows/CI/badge.svg)
-
 Echidna is a weird creature that eats bugs and is highly electrosensitive (with apologies to Jacob Stanley)
 
 More seriously, Echidna is a Haskell program designed for fuzzing/property-based testing of Ethereum smart contracts. It uses sophisticated grammar-based fuzzing campaigns based on a [contract ABI](https://solidity.readthedocs.io/en/develop/abi-spec.html) to falsify user-defined predicates or [Solidity assertions](https://solidity.readthedocs.io/en/develop/control-structures.html#id4). We designed Echidna with modularity in mind, so it can be easily extended to include new mutations or test specific contracts in specific cases.
@@ -349,16 +347,4 @@ We can also use Echidna to reproduce research examples from smart contract fuzzi
 | [Echidna: Effective, usable, and fast fuzzing for smart contracts](https://agroce.github.io/issta20.pdf) | [ISSTA 2020](https://conf.researchr.org/home/issta-2020) | July 2020 |
 | [Echidna: A Practical Smart Contract Fuzzer](papers/echidna_fc_poster.pdf) | [FC 2020](https://fc20.ifca.ai/program.html) | Feb 2020 |
 
-If you are using Echidna for academic work, consider applying to the [Crytic $10k Research Prize](https://blog.trailofbits.com/2019/11/13/announcing-the-crytic-10k-research-prize/).
 
-## Getting help
-
-Feel free to stop by our #ethereum slack channel in [Empire Hacking](https://slack.empirehacking.nyc/) for help using or extending Echidna.
-
-* Get started by reviewing these simple [Echidna invariants](tests/solidity/basic/flags.sol)
-
-* Considering [emailing](mailto:echidna-dev@trailofbits.com) the Echidna development team directly for more detailed questions
-
-## License
-
-Echidna is licensed and distributed under the [AGPLv3 license](https://github.com/crytic/echidna/blob/master/LICENSE).
